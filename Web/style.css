@@ -1,3 +1,70 @@
 body {
-    background-color: blanchedalmond;
+    background-color:#F2E8CF;
+}
+.Banner{
+    background-color:#386641;
+    height:100px;
+    width:100%;
+    text-align:center;
+    font-size:30px;
+    color: white;
+}
+
+h2{
+    font-size:20px;
+    text-align: left;
+    color:#6a994e;
+}
+
+.section{
+    background-color:#F2E8CF;
+    width:100%;
+    
+}
+
+h3{
+    font-size:20px;
+    text-align: left;
+    color:#6a994e;
+}
+
+.menu{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    padding:10px;
+    border-radius:25px;
+
+}
+
+.footer{
+    background-color:#6a994e;
+    height:30px;
+    width:100%;
+}
+
+img{
+    border-radius:50px;
+    width:20px;
+    height:20px;
+}
+
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    width:300px;
+    height:100%;
+    background-color:#386641;
+}
+
+li a{
+    display:block;
+    color:black;
+    padding:8px 16px;
+    text-decoration:none;
+}
+
+li a:hover{
+    background-color:#BC4749;
+    color: white;
 }
