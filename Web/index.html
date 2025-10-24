@@ -3,7 +3,10 @@
   <head>
 
     <link rel="stylesheet" href="style.css">
-    <link href ="https://fonts.googleapis.com/css?family=Crushed" rel = "stylesheet">
+    <link href ="https://fonts.googleapis.com/css?family=Sigmar" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Rubik Doodle Shadow" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Rubik Scribble" rel = "stylesheet">
+    <link href = "https://fonts.googleapis.com/css?family=Quicksand" rel="stlyesheet">
     <meta charset="UTF-8"/>
     <title>simply biology</title>
 
@@ -15,52 +18,117 @@
     <div class = "Banner">
       <h1>SIMPLY BIOLOGY</h1>
     </div>
+    
+    <br>
+    <br> 
+    <br>
+    <br>
+
+   
+    <div class="slideshow">
+
+      <div class ="slide fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="Images/green-virus.jpg" style="width:100%">
+        <div class="text">DID YOU KNOW?</div>
+        <p>The Influenza outbreak in 1918 killed more people than in WW1 killing over 50 million people.</p>
+      </div>
+
+
+      <div class = "slide fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="Images/eye.jpg" style="width:100%">
+        <div class="text">DID YOU KNOW?</div>
+        <p>Most people had brown eyes until about 10,00 years ago when a single mutation from the black sea switched the eyes from brown to blue.Today,approximatley 8% of the population has blue eyes!</p>
+      </div>
+
+      <div class = "slide fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="Images/dna.jpg" style="width:100%">
+        <div class="text">DID YOU KNOW?</div>
+        <p>It takes about 8 hours for DNA to completley copy its DNA!</p>
+      </div>
+
+  
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+     </div>
+     <br>
+
+    </div>
+
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides (n) {
+      showSlides(slideIndex += n);
+    }
+
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides (n) {
+      let i;
+      let slides = document.getElementsByClassName("slide");
+      if(n > slides.length) {slideIndex = 1}
+      if(n < 1) {slideIndex = slides.length}
+      for (i = 0; i< slides.length; i++){
+        slides[i].style.display = "none";
+      }
+  
+      slides[slideIndex-1].style.display = "block";
+    }
+
+    </script>
+    
+
 
     <div class = "section">
-      <h2>ABOUT</h2>
-      <p>This website can easily teach students about the NCEA biology curriculum</p>
+      <h2> What is simply Biology? </h2>
+      <p>fully summarised study notes to help students ace their NCEAS  </p>
+      <p>simply biology aims to educate learners in an engaging way so that students can enjoy studying biology  </p>
+      <img src = "Images/brain.webp" alt = "BRAIN IMAGE">
     </div>
-    
-    <div class = "explore">
-      <h3>EXPLORE</h3>
-    </div>
-     
-    
-    <div class = "menu">
-      
-      <div class="menu-item">
-        <img src= "c:\Hasara\Hasara\RANGITOTO COLLEGE\DGT\revision website\Images\Evolution image.jpg" alt="EVOLUTION IMAGE"  width ="600" height = "400">
 
+    
+    <h3>EXPLORE OUR VARIOUS TOPICS </h3>
+     
+    <div class = "menu">
+      <div class="menu-item">
         <a target="_blank" href = "evolution.html">
+          <img src= "images/Evolution image.jpg" alt="EVOLUTION IMAGE">
           <div class = "desc">EVOLUTION</div>
         </a>
       </div>
       
       <div class ="menu-item">
-        <img src= "c:\Hasara\Hasara\RANGITOTO COLLEGE\DGT\revision website\Images\DNA image.jpg" alt="DNA IMAGE" >
-
         <a target="_blank" href ="dna.html">
-          <div class = "desc">DNA></div>
+          <img src= "images/DNA image.jpg" alt="DNA IMAGE" >
+          <div class = "desc">GENETICS</div>
         </a>
       </div>
  
       <div class = "menu-item">
-        <img src= "c:\Hasara\Hasara\RANGITOTO COLLEGE\DGT\revision website\Images\Bacteria image.webp" alt="MICROBIOLOGY IMAGE">
-
         <a target="_blank" href = "microbiology.html">
+          <img src= "images/Bacteria image.webp" alt="MICROBIOLOGY IMAGE">
           <div class = "desc">MICROBIOLOGY</div>
         </a>
       </div> 
 
     </div>
       
+   <br>
+   <br>
    
-    
+   <div class = "footer"></div>
 
   </body>
 
   <footer>
-     <div class = "footer">
-     </div>
+    
   </footer>
 </html>
